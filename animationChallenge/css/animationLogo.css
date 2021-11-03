@@ -1,0 +1,57 @@
+@keyframes howsit {
+  0% {
+    filter: blur(5px) grayscale(100%);
+    transform: rotate(-420deg);
+    border-radius: 0%;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+
+img {
+  animation-name: howsit;
+  animation-duration: 2.5s;
+  animation-iteration-count: initial;
+  animation-direction: alternate;
+  border-radius: 100%;
+  opacity: 1;
+  display: block;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  transition: 1s ease;
+}
+
+.container:hover {
+  opacity: 0.65;
+  transition: 1s ease;
+}
+
+.text-box {
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+}
+
+.container:hover .text-box {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.text {
+  background-color: #3d5a80;
+  border-radius: 12px;
+  font-size: 20px;
+  color: white;
+  font-size: 16px;
+  padding: 20px 40px;
+}
