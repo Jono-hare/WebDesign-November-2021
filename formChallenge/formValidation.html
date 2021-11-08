@@ -11,9 +11,10 @@
     </header>
 
     <form action="" class="container">
+      
       <div class="input-container">
         <label for="id">User id:</label>
-        <input
+          <input 
           type="text"
           name="user_id"
           id="id"
@@ -23,9 +24,10 @@
           maxlength="12"
         />
       </div>
+
       <div class="input-container">
         <label for="password">Password:</label>
-        <input
+          <input
           type="password"
           name="user_password"
           id="password"
@@ -35,24 +37,27 @@
           maxlength="12"
         />
       </div>
+
       <div class="input-container">
         <label for="name">Name:</label>
-        <input
+          <input class="input-full"
           type="text"
           name="user_name"
           id="name"
           required
           placeholder="Required"/>
       </div>
+
       <div class="input-container">
         <label for="address">Address:</label>
-        <input
+          <input class="input-full"
           type="text"
           name="user_address"
           id="address"
           placeholder="Optional"
         />
       </div>
+
       <div class="input-container">
         <label for="country">Country:</label>
         <select name="user_country" id="country">
@@ -65,6 +70,7 @@
           <option value="vn">Vietnam</option>
         </select>
       </div>
+
       <div class="input-container">
         <label for="zip_code">ZIP Code:</label>
         <input
@@ -76,41 +82,47 @@
         />
       </div>
     </div>
+
     <div class="input-container">
       <label for="email">Email:</label>
-      <input
-        type="email"
-        name="user_email"
-        id="email"
-        required
-        placeholder="Required"
-      />
+        <input
+          type="email"
+          name="user_email"
+          id="email"
+          required
+          placeholder="Required"
+        />
     </div>
 
     <div class="radio-container">
-      <p>Sex:</p>
-      <input type="radio" name="user_sex" id="sex" required>
-      <label for="sex">Male</label>
-      <input type="radio" name="user_sex" id="sex" required>
-      <label for="sex">Female</label>
+      <label>Sex:</label>
+        <label class="radio-inline" for="sex">
+          <input type="radio" name="user_sex" id="sex" required> Male
+        </label>
+        <label class="radio-inline" for="sex">
+          <input type="radio" name="user_sex" id="sex" required> Female
+        </label>
     </div>
 
     <div class="radio-container">
-      <p>Language:</p>
-      <input type="checkbox" name="user_language" id="language" required>
-      <label for="language">English</label>
-      <input type="checkbox" name="user_language" id="language" required>
-      <label for="language">Vietnamese</label>
+      <label>Language:</label>
+      <label class="radio-inline" for="language">
+        <input type="checkbox" name="user_language" id="language" required checked> English
+      </label>
+      <label class="radio-inline" for="language">
+        <input type="checkbox" name="user_language" id="language" required> Vietnamese
+      </label>
     </div>
 
     <div class="input-container">
-      <label for="about">About:</label>
+      <label class="about-label" for="about">About:</label>
       <textarea name="user_about" id="about" placeholder="Optional"
       ></textarea>
     </div>
-    <div class="input-container">
+
+    <div class="button">
       <input type="submit" value="Submit">
     </div>
-    </form>
+  </form>
   </body>
 </html>
