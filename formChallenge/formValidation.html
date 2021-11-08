@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <title>Form Validation Challenge</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+
+    <form action="" class="container">
+      
+      <div class="input-container">
+        <label for="id">User id:</label>
+          <input 
+          type="text"
+          name="user_id"
+          id="id"
+          required
+          placeholder="Required"
+          minlength="5"
+          maxlength="12"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="password">Password:</label>
+          <input
+          type="password"
+          name="user_password"
+          id="password"
+          required
+          placeholder="Required"
+          minlength="7"
+          maxlength="12"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="name">Name:</label>
+          <input class="input-full"
+          type="text"
+          name="user_name"
+          id="name"
+          required
+          placeholder="Required"/>
+      </div>
+
+      <div class="input-container">
+        <label for="address">Address:</label>
+          <input class="input-full"
+          type="text"
+          name="user_address"
+          id="address"
+          placeholder="Optional"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="country">Country:</label>
+        <select name="user_country" id="country">
+          <option class="option-select" value="none" selected disabled hidden>
+            Select an option
+          </option>
+          <option value="rsa">South Africa</option>
+          <option value="nam">Namibia</option>
+          <option value="germany">Germany</option>
+          <option value="vn">Vietnam</option>
+        </select>
+      </div>
+
+      <div class="input-container">
+        <label for="zip_code">ZIP Code:</label>
+        <input
+          type="number"
+          name="user_zip_code"
+          id="zip_code"
+          required
+          placeholder="Required"
+        />
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label for="email">Email:</label>
+        <input
+          type="email"
+          name="user_email"
+          id="email"
+          required
+          placeholder="Required"
+        />
+    </div>
+
+    <div class="radio-container">
+      <label>Sex:</label>
+        <label class="radio-inline" for="sex">
+          <input type="radio" name="user_sex" id="sex" required> Male
+        </label>
+        <label class="radio-inline" for="sex">
+          <input type="radio" name="user_sex" id="sex" required> Female
+        </label>
+    </div>
+
+    <div class="radio-container">
+      <label>Language:</label>
+      <label class="radio-inline" for="language">
+        <input type="checkbox" name="user_language" id="language" required checked> English
+      </label>
+      <label class="radio-inline" for="language">
+        <input type="checkbox" name="user_language" id="language" required> Vietnamese
+      </label>
+    </div>
+
+    <div class="input-container">
+      <label class="about-label" for="about">About:</label>
+      <textarea name="user_about" id="about" placeholder="Optional"
+      ></textarea>
+    </div>
+
+    <div class="button">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  </body>
+</html>
