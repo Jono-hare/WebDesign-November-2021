@@ -15,6 +15,11 @@ header {
   background-color: #293241;
   color: #fcf7f8;
   padding: 20px;
+  background-image: linear-gradient(to bottom, #374458, #293241);
+  background-image: url(https://www.capetown.travel/wp-content/uploads/2018/12/Table-Mountain-Camps-Bay.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
 }
 
 img {
@@ -35,7 +40,9 @@ header > div > p {
 
 .header-box {
   width: 650px;
-  margin: auto;
+  margin: 15px auto;
+  background: rgba(1, 1, 1, 0.5);
+  padding: 5px 5px;
 }
 
 .box {
@@ -95,7 +102,7 @@ main {
 }
 
 footer {
-  background-color: #293241;
+  background-image: linear-gradient(to bottom, #293241, #374458);
   text-align: center;
   padding: 15px;
 }

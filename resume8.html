@@ -11,13 +11,24 @@
 
   <body>
     <header>
+      <!-- <div class="header-background"> -->
       <aside>
-        <img src="Images/resumeImg.png" alt="A picture of Jonathan" />
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="Images/jono-sass-small.jpg"
+          />
+          <source
+            media="(max-width: 1000px)"
+            srcset="Images/jono-sass-med.jpg"
+          />
+          <img src="Images/jono-sass.jpg" alt="A picture of Jonathan" />
+        </picture>
       </aside>
 
-      <h1>Jonathan Wenning-Hare</h1>
-
       <div class="header-box">
+        <h1>Jonathan Wenning-Hare</h1>
+
         <p>
           Howsit, at the moment, I'm living in Cape Town and learning to code. I
           am currently looking to change career paths and looking forward to the
@@ -25,6 +36,7 @@
           This is my first project submission for CodeSpace Academy.
         </p>
       </div>
+      <!-- </div> -->
     </header>
 
     <div class="box">
