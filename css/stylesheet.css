@@ -15,6 +15,11 @@ header {
   background-color: #293241;
   color: #fcf7f8;
   padding: 20px;
+  background-image: linear-gradient(to bottom, #374458, #293241);
+  background-image: url(https://www.capetown.travel/wp-content/uploads/2018/12/Table-Mountain-Camps-Bay.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
 }
 
 img {
@@ -33,9 +38,15 @@ header > div > p {
   font-size: 1.15em;
 }
 
+.header-small {
+  display: none;
+}
+
 .header-box {
-  width: 650px;
-  margin: auto;
+  max-width: 650px;
+  margin: 15px auto;
+  background: rgba(58, 68, 88, 0.6);
+  padding: 5px 5px;
 }
 
 .box {
@@ -95,11 +106,55 @@ main {
 }
 
 footer {
-  background-color: #293241;
+  background-image: linear-gradient(to bottom, #293241, #374458);
   text-align: center;
   padding: 15px;
 }
 
 footer > a {
   padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 6vw;
+  }
+  header {
+    background-position: left;
+  }
+
+  .header-small {
+    display: block;
+  }
+
+  .header-small > p,
+  .p-box > p,
+  .p-box > p > a {
+    font-size: 3.25vw;
+  }
+
+  .header-med,
+  .menu {
+    display: none;
+  }
+
+  p,
+  p > a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 10%;
+    /* padding: 20px; */
+  }
+
+  .box > .menu > ul > li > a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Do I need this? as Anything larger than 768px will defualt to the regular CSS? */
 }
