@@ -1,0 +1,90 @@
+:root {
+  --clr-primary-100: #fcf7f8;
+  --clr-primary-300: #e0fbfc;
+  --clr-primary-500: #98c1d9;
+  --clr-primary-700: #3d5a80;
+  --clr-primary-900: #374458;
+  --clr-orange-100: #ee6c4d;
+
+  --ff-primary: "Playfair Display", serif;
+  --ff-accent: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+/* Text & image styling */
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-accent);
+  color: var(--clr-primary-100);
+}
+
+.ff-light {
+  color: var(--clr-primary-300);
+}
+.ff-dark {
+  color: var(--clr-primary-700);
+}
+
+.hover-link {
+  color: var(--clr-orange-100);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.hover {
+  color: var(--clr-primary-300);
+  text-decoration: none;
+}
+
+.li-none {
+  list-style-type: none;
+}
+
+img {
+  border-radius: 100%;
+  transition: transform 1s;
+  max-width: 350px;
+  max-height: 350px;
+}
+
+/*  Backgrounds */
+
+.menu {
+  background-color: var(--clr-primary-900);
+}
+
+.menu > ul {
+  margin: 0;
+}
+
+/* Animation & effects */
+
+.ff-dark > a:hover {
+  color: var(--clr-primary-500);
+}
+
+img:hover {
+  transform: scale(1.025);
+}
+
+.hover:hover {
+  color: var(--clr-orange-100);
+  transition: 0.75s;
+}
+
+/* Background colors */
+
+.bg-darker {
+  background-color: var(--clr-primary-900);
+}
