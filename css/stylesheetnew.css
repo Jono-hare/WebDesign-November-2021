@@ -4,6 +4,7 @@
   --clr-primary-500: #98c1d9;
   --clr-primary-700: #3d5a80;
   --clr-primary-900: #374458;
+  --clr-primary-max: #293241;
   --clr-orange-100: #ee6c4d;
 
   --ff-primary: "Playfair Display", serif;
@@ -18,6 +19,7 @@
 
 body {
   font-family: var(--ff-primary);
+  overflow-x: hidden;
 }
 
 /* Text & image styling */
@@ -58,14 +60,19 @@ img {
   max-height: 350px;
 }
 
+.menu > ul {
+  padding: 0; /* aligned the h2 and ul elements */
+}
+
 /*  Backgrounds */
 
 .menu {
   background-color: var(--clr-primary-900);
+  margin-top: auto;
 }
 
-.menu > ul {
-  margin: 0;
+.bg-darker {
+  background-color: var(--clr-primary-max);
 }
 
 /* Animation & effects */
@@ -81,10 +88,4 @@ img:hover {
 .hover:hover {
   color: var(--clr-orange-100);
   transition: 0.75s;
-}
-
-/* Background colors */
-
-.bg-darker {
-  background-color: var(--clr-primary-900);
 }
