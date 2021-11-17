@@ -33,17 +33,23 @@
   <body>
     <!------ Landing ------>
 
-    <header class="container-fluid text-center px-0">
-      <div class="bg-darker">
+    <header class="jumbotron text-center">
+      <div class="">
         <picture>
-          <source media="(max-width: 600px)" srcset="Images/resumeImg.png" />
-          <source media="(max-width: 768px)" srcset="Images/resumeImg.png" />
-          <img src="Images/resumeImg.png" alt="An image of Jonathan" />
+          <source
+            media="(max-width: 768px)"
+            srcset="Images/jono-sass-small.jpg"
+          />
+          <source
+            media="(max-width: 922px)"
+            srcset="Images/jono-sass-med.jpg"
+          />
+          <img src="Images/jono-sass.jpg" alt="A photo of Jonathan" />
         </picture>
-        <div class="container-sm">
+        <div class="header-box">
           <h1>Jonathan Wenning-Hare</h1>
-          <div class="header-med">
-            <p class="ff-light">
+          <div>
+            <p class="ff-light jumbo-p">
               Howsit, at the moment, I'm living in Cape Town and learning to
               code. I am currently looking to change career paths and looking
               forward to the new learning curve. Once complete, I'm looking to
@@ -54,18 +60,18 @@
           <!-- <div class="header-small">
             <p class="ff-light">
               Howsit, I'm from Cape Town and currently learning to code.
-            </p> -->
-          </div>
+            </p> 
+            </div>-->
         </div>
       </div>
     </header>
 
     <!------ Menu ------>
 
-    <section class="container-fluid px-0">
+    <section class="container-fluid px-0 main">
       <div class="row">
-        <div class="col">
-          <aside class="menu container-fluid">
+        <div class="col col-nav">
+          <nav class="menu container-fluid">
             <h2 class="ff-light">Menu</h2>
             <ul>
               <li class="li-none">
@@ -84,18 +90,18 @@
                 <a class="hover" href="#contact">Contact</a>
               </li>
             </ul>
-          </aside>
+          </nav>
         </div>
       </div>
 
       <!------ Main content ------>
 
       <main class="row">
-        <div class="col">
+        <div class="col col-main">
           <section id="education">
             <h2 class="ff-dark">Education</h2>
             <article>
-              <h3 class="ff-dark">
+              <h4 class="ff-dark">
                 Intro to Web at
                 <a
                   class="hover-link"
@@ -103,7 +109,7 @@
                   target="_blank"
                   >CodeSpace Academy</a
                 >
-              </h3>
+              </h4>
               <div class="p-box">
                 <p>
                   During lockdown in 2020, I decided to start learning how to
@@ -124,7 +130,7 @@
             </article>
 
             <article>
-              <h3 class="ff-dark">Bcom Marketing Management through Unisa</h3>
+              <h4 class="ff-dark">Bcom Marketing Management through Unisa</h4>
               <div class="p-box">
                 <p>
                   Fresh out of school, I spent my first two years studying
@@ -143,7 +149,7 @@
             <h2 class="ff-dark">Experience</h2>
 
             <article>
-              <h3 class="ff-dark">
+              <h4 class="ff-dark">
                 Operations Manager at
                 <a
                   class="hover-link"
@@ -151,7 +157,7 @@
                   target="_blank"
                   >Chelsea Cleaning</a
                 >
-              </h3>
+              </h4>
               <ul>
                 <li>
                   Managing the company's online presence and corresponding with
@@ -168,7 +174,7 @@
             </article>
 
             <article>
-              <h3 class="ff-dark">
+              <h4 class="ff-dark">
                 Senior Teacher at
                 <a
                   class="hover-link"
@@ -176,7 +182,7 @@
                   target="_blank"
                   >Apax Leaders</a
                 >
-              </h3>
+              </h4>
               <ul>
                 <li>
                   A minimum of 18 hours of teaching a week. In person or online.
