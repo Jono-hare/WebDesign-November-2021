@@ -20,6 +20,7 @@
 body {
   font-family: var(--ff-primary);
   overflow-x: hidden;
+  /* margin: 0; */
 }
 
 /* Text & image styling */
