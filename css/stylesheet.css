@@ -1,0 +1,66 @@
+:root {
+  --clr-primary-100: #fcf7f8;
+  --clr-primary-300: #e0fbfc;
+  --clr-primary-500: #98c1d9;
+  --clr-primary-700: #3d5a80;
+  --clr-primary-900: #374458;
+  --clr-primary-max: #293241;
+  --clr-orange-100: #ee6c4d;
+
+  --ff-primary: "Playfair Display", serif;
+  --ff-accent: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-accent);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+}
+
+.color-dark,
+nav {
+  background-color: var(--clr-primary-900);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+img {
+  display: flex;
+  max-height: 350px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+header {
+  /* background-image: url(../Images/hero.jpg); */
+  /* background-position: left; */
+  /* background-size: cover; */
+  /* height: 100vh; */
+  background-color: var(--clr-primary-900);
+}
+
+.card {
+  background-color: var(--clr-orange-100);
+  color: #3d5a80;
+}
+
+main {
+  /* padding: 25px; */
+}
+
+.jumbotron {
+  /* padding: 25px; */
+  /* height: 50%; */
+}
