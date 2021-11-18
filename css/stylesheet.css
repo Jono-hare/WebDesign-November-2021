@@ -18,6 +18,73 @@
 }
 
 body {
-  font-family: var(--ff-accent);
+  font-family: var(--ff-primary);
   overflow-x: hidden;
+}
+
+/* Font styling */
+
+.light-header,
+.nav-item > .nav-link,
+.ff-dark > .btn {
+  color: var(--clr-primary-300);
+}
+
+.ff-dark > .btn {
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-style: none;
+}
+
+.navbar-toggler > .navbar-toggler-icon {
+  color: var(--clr-primary-300);
+}
+
+.ff-dark,
+a {
+  color: var(--clr-primary-900);
+  /* color: var(--clr-orange-100); */
+}
+
+.hover-link {
+  color: var(--clr-orange-100);
+}
+
+.hover-link:hover {
+  color: var(--clr-primary-500);
+  font-style: none;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Image styling & Animation*/
+
+img {
+  max-width: 250px;
+  margin: auto;
+}
+
+/* Background styling */
+
+nav {
+  background-color: var(--clr-primary-max);
+}
+
+header {
+  background-image: url(../Images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.accordion > .card {
+  border-color: var(--clr-primary-900);
+}
+
+.card > .card-header {
+  background-color: var(--clr-primary-900);
+  border-color: var(--clr-primary-900);
+}
+
+footer {
+  background-color: var(--clr-primary-max);
 }

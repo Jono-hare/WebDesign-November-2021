@@ -24,14 +24,13 @@
     <!-- ============ Bootstrap CSS =========== -->
     
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
-    />
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"/>
     
     <link   rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
@@ -42,14 +41,13 @@
     <!-- ============= Google Fonts =========== -->
 
     <link   rel="preconnect" 
-            href="https://fonts.googleapis.com" />
+            href="https://fonts.googleapis.com"/>
     <link   rel="preconnect" 
             href="https://fonts.gstatic.com" 
             crossorigin />
     <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400&display=swap"
-            rel="stylesheet"
-    />
+            rel="stylesheet"/>
   </head>
 
     <!-- ============= Body =================== -->
@@ -57,10 +55,17 @@
   <body>
     <!-- ============= Nav ==================== -->
 
-    <nav class="navbar fixed-top navbar-expand-md">
+    <nav class="navbar 
+                fixed-top 
+                navbar-expand-md
+                px-3">
 
-        <a  class="navbar-brand" 
-            href="#jumbotron">Menu</a>
+        <a  class=" navbar-brand 
+                    light-header
+                    font-weight-bold" 
+            href="#jumbotron">
+            Menu
+        </a>
       
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" 
@@ -71,16 +76,40 @@
         </button>
       
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse" 
+        <div class="collapse 
+                    navbar-collapse" 
              id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-              <a    class="nav-link" 
-                    href="#education">Education</a></li>
-              <li   class="nav-item"></li><a class="nav-link" href="#experience">Experience</a></li>
-              <li   class="nav-item"></li><a class="nav-link" href="#skills">Skills</a></li>
-              <li   class="nav-item"></li><a class="nav-link" href="#interests">Interests</a></li>
-              <li   class="nav-item"></li><a class="nav-link" href="#contact">Contact</a></li>
+                    <a  class="nav-link" 
+                        href="#education">
+                        Education
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#experience">
+                        Experience
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#skills">
+                        Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#interests">
+                        Interests
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#contact">
+                        Contact
+                    </a>
+                </li>
             </ul>
         </div>
       </nav>
@@ -90,38 +119,46 @@
     <!-- ============= Jumbotron ============== -->
 
     <header id="jumbotron" 
-            class="jumbotron jumbotron-fluid px-0 m-0">
+            class=" jumbotron 
+                    jumbotron-fluid 
+                    px-3 
+                    m-0">
       <div  class="container">
-        <picture>
+        <picture >
             <source
               media="(max-width: 768px)"
-              srcset="Images/jono-sass-small.jpg"
-            />
+              srcset="Images/jono-sass-small.jpg"/>
             <source
               media="(max-width: 922px)"
-              srcset="Images/jono-sass-med.jpg"
-            />
+              srcset="Images/jono-sass-med.jpg"/>
             <img
-              class="img-fluid rounded-circle"
+              class="   rounded-circle
+                        d-block
+                        mx-auto"
               src="Images/jono-sass.jpg"
-              alt="A photo of Jonathan"
-            />
-          </picture>
-        <h1 class="display-3">Jonathan Wenning-Hare</h1>
+              alt="A photo of Jonathan"/>
+        </picture>
+        <h1 class="display-3">
+            Jonathan Wenning-Hare
+        </h1>
         <p  class="lead">
           Howsit, at the moment, I'm living in Cape Town and learning to code. I
           am currently looking to change career paths and looking forward to the
           new learning curve. Once complete, I'm looking to go overseas again.
           This is my first project submission for CodeSpace Academy.
         </p>
-        <hr class="my-2" />
-        <p  class="lead">
-          <a
-            class="btn btn-primary btn-lg"
-            href="Jumbo action link"
-            role="button"
-            >Say Howsit</a
-          >
+        <hr class="my-2"/>
+        <p  class=" lead
+                    text-center">
+            <a
+                class=" btn 
+                        btn-primary 
+                        btn-lg
+                        mt-4"
+                href="#contact"
+                role="button">
+                    Say Howsit
+            </a>
         </p>
       </div>
     </header>
@@ -130,24 +167,25 @@
 
     <!-- ============= Main =================== -->
 
-    <main class="">
+    <main class="px-auto">
 
         <!-- Education Accordion -->
         <div    class="accordion" 
                 id="educationAccordion">
-            <div class="card">
+            <div class="card
+                        rounded-0">
               <div  class="card-header" 
                     id="education">
                 <h2 class="ff-dark">
-                  <button   class=" btn 
-                                    btn-link" 
-                            type="button" 
-                            data-toggle="collapse" 
-                            data-target="#collapseEdu" 
-                            aria-expanded="true" 
-                            aria-controls="collapseEdu">
-                    Education
-                  </button>
+                    <button   class="   btn 
+                                        btn-link" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseEdu" 
+                                aria-expanded="true" 
+                                aria-controls="collapseEdu">
+                        Education
+                    </button>
                 </h2>
               </div>
           
@@ -159,44 +197,46 @@
                 <div class="card-body">
                     <article class="px-5">
                         <h3 class="ff-dark">
-                            Intro to Web at
+                                Intro to Web at
                             <a
                                 class="hover-link"
                                 href="https://www.codespace.co.za/"
-                                target="_blank"
-                            >CodeSpace Academy</a
-                            >
+                                target="_blank">
+                                CodeSpace Academy
+                            </a>
                         </h3>
                         <div class="p-box">
                             <p>
-                            During lockdown in 2020, I decided to start learning how to
-                            code. After speaking to a few friends in the industry, I began
-                            working on
-                                <a
-                                    class="hover-link"
-                                    href="https://www.freecodecamp.org/certification/jono-hare/responsive-web-design"
-                                    target="_blank"
-                                >FreeCodeCamp's</a
-                                >
-                            Responsive Web Design certification. Just like that, I caught
-                            the coding bug. A year later, I have decided to further my
-                            studies with CodeSpace and the Software Development Course
-                            that they offer.
+                                During lockdown in 2020, I decided to start learning how to
+                                code. After speaking to a few friends in the industry, I began
+                                working on
+                                    <a
+                                        class="hover-link"
+                                        href="https://www.freecodecamp.org/certification/jono-hare/responsive-web-design"
+                                        target="_blank">
+                                        FreeCodeCamp's
+                                    </a>
+                                Responsive Web Design certification. Just like that, I caught
+                                the coding bug. A year later, I have decided to further my
+                                studies with CodeSpace and the Software Development Course
+                                that they offer.
                             </p>
                         </div>
                     </article>
 
                     <article class="px-5">
-                        <h3 class="ff-dark">Bcom Marketing Management through Unisa</h3>
+                        <h3 class="ff-dark">
+                            Bcom Marketing Management through Unisa
+                        </h3>
                         <div class="p-box">
                             <p>
-                            Fresh out of school, I spent my first two years studying
-                            full-time. While studying, I worked part-time as a delivery
-                            driver during the week and on weekends at Chelsea Cleaning,
-                            running the office. During my second year, I switched to
-                            studying part-time and working full-time. I was now in a more
-                            senior position. I was now able to put what I had learnt into
-                            practice.
+                                Fresh out of school, I spent my first two years studying
+                                full-time. While studying, I worked part-time as a delivery
+                                driver during the week and on weekends at Chelsea Cleaning,
+                                running the office. During my second year, I switched to
+                                studying part-time and working full-time. I was now in a more
+                                senior position. I was now able to put what I had learnt into
+                                practice.
                             </p>
                         </div>
                     </article>
@@ -208,7 +248,8 @@
             <!-- Experience Accordion -->
             <div class="accordion" 
                  id="experienceAccordion">
-                <div class="card">
+                <div class="card 
+                            rounded-0">
                   <div  class="card-header" 
                         id="experience">
                     <h2 class="ff-dark">
@@ -232,23 +273,25 @@
                         <article class="px-5">
                             <h3 class="ff-dark">
                                 Operations Manager at
-                                <a
-                                class="hover-link"
-                                href="https://www.chelseacleaning.co.za/"
-                                target="_blank"
-                                >Chelsea Cleaning</a
-                                >
+                                <a class="hover-link"
+                                    href="https://www.chelseacleaning.co.za">
+                                    Chelsea Cleaning
+                                </a>
                             </h3>
                             <ul>
                                 <li>
-                                Managing the company's online presence and corresponding with
-                                our digital marketing agency.
+                                    Managing the company's online presence and corresponding with
+                                    our digital marketing agency.
                                 </li>
                                 <li>
-                                Making sure the day-to-day operations are running smoothly.
+                                    Making sure the day-to-day operations are running smoothly.
                                 </li>
-                                <li>Performing internal quality audits.</li>
-                                <li>Bookkeeping duties.</li>
+                                <li>
+                                    Performing internal quality audits.
+                                </li>
+                                <li>
+                                    Bookkeeping duties.
+                                </li>
                                 <li>Making monthly payments and salaries.</li>
                                 <li>Dealing with customer complaints.</li>
                             </ul>
@@ -289,7 +332,8 @@
             <!-- Skills Accordion -->
             <div class="accordion" 
                  id="skillAccordion">
-                <div class="card">
+                <div class="card
+                            rounded-0">
                     <div  class="card-header" 
                             id="skills">
                         <h2 class="ff-dark">
@@ -326,7 +370,8 @@
             <!-- Interests Accordion -->
             <div class="accordion" 
                  id="interestsAccordion">
-                <div class="card">
+                <div class="card 
+                            rounded-0">
                     <div  class="card-header" 
                             id="interests">
                         <h2 class="ff-dark">
@@ -363,42 +408,60 @@
         </div>
 
     <!-- ============= Contact form =========== -->
-    <form   class="container px-5"
+    <form   class=" container 
+                    p-3"
             id="contact">
-        <div class="col">
 
-            <div class="row 
-                        text-center">
-                <h2>Get in touch</h2>
-            </div>
-
-            <div class="row">
-                <input  id="name" 
-                        type="text" 
-                        placeholder="Enter your name..." 
+            <h2 class=" text-center
+                        mb-3">
+                Contact Me
+            </h2>
+        
+        <!-- Floating Name -->
+            <div class="    form-floating
+                            mb-3">
+                <input  class="form-control"
+                        type="text"
+                        placeholder="Your Name"
+                        id="form-name"
                         required>
+                <label for="form-name">Your Name</label>
             </div>
 
-            <div class="row">
-                <input  name="email" 
-                        id="email" 
-                        type="email" 
-                        placeholder="Enter your email..."
+        <!-- Floating Email -->
+        
+            <div class="    form-floating
+                            mb-3">
+                <input  class="form-control"
+                        type="email"
+                        placeholder="Your Email"
+                        id="form-email"
                         required>
+                <label for="form-email">Your Email</label>
             </div>
 
-            <div class="row">
-                <textarea   name="textarea" 
-                            id="experience" 
-                            class="text-box"
-                            placeholder="Say howsit here..."></textarea>
+            <!-- Floating Textarea -->
+            <div class="form-floating">
+                <textarea   class=" form-control
+                                    rounded"
+                            type="text"
+                            placeholder="Your Message"
+                            id="form-textarea"
+                            required></textarea>
+                    <label for="form-textarea">Your Message</label>
             </div>
 
-            <div class="row">
-                <input  type="submit" 
-                        id="submit">
+            <!-- Submit btn -->
+            <div class="text-center">
+                <button type="submit"
+                        value="submit" 
+                        class=" btn 
+                                btn-primary 
+                                btn-lg
+                                m-3">
+                                Send it
+                </button>
             </div>
-        </div>
     </form>
     <!-- ============= Contact form end ======= -->
 
@@ -413,7 +476,9 @@
                     p-2">
         <section class="container 
                         text-center">
-            <h2 class="ff-light">Contact details</h2>
+            <h2 class="ff-light">
+                Contact details
+            </h2>
             <a  href="https://www.linkedin.com/in/jonathan-wenning-hare-8b428576/"
                 target="_blank">
                 <i class="  hover 
