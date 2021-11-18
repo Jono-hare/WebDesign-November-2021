@@ -1,0 +1,15 @@
+// Custom variables
+$primary: #374458;
+$secondary: #98c1d9;
+$success: #fcf7f8;
+$info: #374458;
+$warning: #374458;
+$danger: #ee6c4d;
+$light: #e0fbfc;
+$dark: #293241;
+
+// Import bootstrap
+//NB this must be below Custom variables
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//https://www.youtube.com/watch?v=nCX3QVl_PiI

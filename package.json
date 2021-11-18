@@ -1,0 +1,23 @@
+{
+  "name": "webdesign-november-2021",
+  "version": "1.0.0",
+  "description": "My second project for the CodeSpace Software Development course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jono-hare/WebDesign-November-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jono-hare/WebDesign-November-2021/issues"
+  },
+  "homepage": "https://github.com/Jono-hare/WebDesign-November-2021#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3"
+  }
+}
