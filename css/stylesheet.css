@@ -20,20 +20,33 @@
 body {
   font-family: var(--ff-primary);
   overflow-x: hidden;
+  padding-top: 50px;
 }
 
 /* Font styling */
 
-.light-header,
+h1 {
+  color: var(--clr-primary-100);
+}
+
+.jumbotron-text {
+  color: var(--clr-primary-300);
+}
+
 .nav-item > .nav-link,
 .ff-dark > .btn {
   color: var(--clr-primary-300);
 }
 
+.nav-item > .nav-link:hover,
+.ff-dark > .btn:hover {
+  color: var(--clr-orange-100);
+  text-decoration: none;
+}
+
 .ff-dark > .btn {
   font-size: 1.8rem;
-  text-decoration: none;
-  font-style: none;
+  align-items: center;
 }
 
 .navbar-toggler > .navbar-toggler-icon {
@@ -43,7 +56,6 @@ body {
 .ff-dark,
 a {
   color: var(--clr-primary-900);
-  /* color: var(--clr-orange-100); */
 }
 
 .hover-link {
@@ -57,11 +69,41 @@ a {
   transition: 0.5s;
 }
 
+article > div,
+article > ul > li {
+  color: var(--clr-primary-700);
+}
+
+section > h2 {
+  color: var(--clr-primary-300);
+}
+
+/* Container Margins */
+
+.ul-padding {
+  margin: auto;
+}
+
 /* Image styling & Animation*/
 
 img {
   max-width: 250px;
   margin: auto;
+}
+
+img:hover {
+  transform: scale(1.025);
+  transition: 0.5s;
+}
+
+.hover-effect-o {
+  color: var(--clr-primary-300);
+}
+
+.hover-effect-o:hover {
+  color: var(--clr-orange-100);
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 /* Background styling */
@@ -74,6 +116,15 @@ header {
   background-image: url(../Images/hero.jpg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
+}
+
+.jumbotron-text-box {
+  max-width: 850px;
+  margin: 15px auto;
+  background: rgba(58, 68, 88, 0.6);
+  padding: 15px 15px;
+  border-radius: 15px;
 }
 
 .accordion > .card {
@@ -88,3 +139,44 @@ header {
 footer {
   background-color: var(--clr-primary-max);
 }
+
+/* Button Styling */
+
+.container > .jumbotron-btn,
+.text-center > .btn {
+  background-color: var(--clr-orange-100);
+  border-color: var(--clr-orange-100);
+}
+
+.btn .container > .jumbotron-btn:hover,
+.text-center > .btn:hover {
+  background-color: var(--clr-primary-300);
+  border-color: var(--clr-primary-300);
+  color: var(--clr-orange-100);
+  transition: 0.5s;
+}
+
+.light-icons {
+  color: var(--clr-primary-300);
+  transition: 0.5s;
+  margin: 10px 20px;
+}
+
+.light-icons:hover {
+  color: var(--clr-orange-100);
+}
+
+/* Contact Form Styling */
+
+.form-floating {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+  .menu {
+    
+    
+  }

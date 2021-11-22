@@ -55,13 +55,13 @@
   <body>
     <!-- ============= Nav ==================== -->
 
-    <nav class="navbar 
-                fixed-top 
+    <nav class="navbar
                 navbar-expand-md
+                fixed-top
                 px-3">
 
-        <a  class=" navbar-brand 
-                    light-header
+        <a  class=" navbar-brand
+                    hover-effect-o
                     font-weight-bold" 
             href="#jumbotron">
             Menu
@@ -71,8 +71,12 @@
         <button class="navbar-toggler" 
                 type="button" 
                 data-toggle="collapse" 
-                data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+                data-target="#collapsibleNavbar"
+                aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="   fas 
+                            fa-ellipsis-h
+                            hover-effect-o">
+            </span>
         </button>
       
         <!-- Navbar links -->
@@ -138,27 +142,29 @@
               src="Images/jono-sass.jpg"
               alt="A photo of Jonathan"/>
         </picture>
-        <h1 class="display-3">
-            Jonathan Wenning-Hare
-        </h1>
-        <p  class="lead">
-          Howsit, at the moment, I'm living in Cape Town and learning to code. I
-          am currently looking to change career paths and looking forward to the
-          new learning curve. Once complete, I'm looking to go overseas again.
-          This is my first project submission for CodeSpace Academy.
-        </p>
-        <hr class="my-2"/>
-        <p  class=" lead
-                    text-center">
-            <a
-                class=" btn 
-                        btn-primary 
-                        btn-lg
-                        mt-4"
-                href="#contact"
-                role="button">
-                    Say Howsit
-            </a>
+            <div class="jumbotron-text-box">
+                <h1 class="display-4">
+                    Jonathan Wenning-Hare
+                </h1>
+                <p  class="jumbotron-text">
+                Howsit, at the moment, I'm living in Cape Town and learning to code. I
+                am currently looking to change career paths and looking forward to the
+                new learning curve. Once complete, I'm looking to go overseas again.
+                This is my first project submission for CodeSpace Academy.
+                </p>
+            </div>
+            <div class="text-center">
+                <a class="  btn 
+                            btn-primary 
+                            btn-lg
+                            mt-4
+                            jumbotron-btn
+                            text-center"
+                    href="#contact"
+                    role="button">
+                        Say Howsit
+                </a>
+            </div>  
         </p>
       </div>
     </header>
@@ -174,10 +180,11 @@
                 id="educationAccordion">
             <div class="card
                         rounded-0">
-              <div  class="card-header" 
+              <div  class=" card-header
+                            text-center" 
                     id="education">
                 <h2 class="ff-dark">
-                    <button   class="   btn 
+                    <button   class="   btn  
                                         btn-link" 
                                 type="button" 
                                 data-toggle="collapse" 
@@ -250,7 +257,8 @@
                  id="experienceAccordion">
                 <div class="card 
                             rounded-0">
-                  <div  class="card-header" 
+                  <div  class=" card-header
+                                text-center" 
                         id="experience">
                     <h2 class="ff-dark">
                       <button   class=" btn 
@@ -334,7 +342,8 @@
                  id="skillAccordion">
                 <div class="card
                             rounded-0">
-                    <div  class="card-header" 
+                    <div  class="   card-header
+                                    text-center" 
                             id="skills">
                         <h2 class="ff-dark">
                         <button   class="   ff-dark 
@@ -355,7 +364,8 @@
                         aria-labelledby="skills" 
                         data-parent="#skillAccordion">
                         <div class="card-body">
-                            <ul class="px-5">
+                            <ul class=" px-5
+                                        ul-padding">
                                 <li>Team management</li>
                                 <li>Feedback & coaching</li>
                                 <li>Organizational development</li>
@@ -372,7 +382,8 @@
                  id="interestsAccordion">
                 <div class="card 
                             rounded-0">
-                    <div  class="card-header" 
+                    <div  class="   card-header
+                                    text-center" 
                             id="interests">
                         <h2 class="ff-dark">
                         <button   class="   btn 
@@ -443,12 +454,15 @@
             <!-- Floating Textarea -->
             <div class="form-floating">
                 <textarea   class=" form-control
-                                    rounded"
+                                    rounded
+                                    my-3"
                             type="text"
                             placeholder="Your Message"
                             id="form-textarea"
                             required></textarea>
-                    <label for="form-textarea">Your Message</label>
+                    <label for="form-textarea">
+                        Your Message
+                    </label>
             </div>
 
             <!-- Submit btn -->
@@ -457,7 +471,7 @@
                         value="submit" 
                         class=" btn 
                                 btn-primary 
-                                btn-lg
+                                btn-xl
                                 m-3">
                                 Send it
                 </button>
@@ -473,16 +487,17 @@
 
     <footer class=" container-fluid 
                     bg-darker
-                    p-2">
+                    p-3">
         <section class="container 
                         text-center">
             <h2 class="ff-light">
-                Contact details
+                Connect with me
             </h2>
             <a  href="https://www.linkedin.com/in/jonathan-wenning-hare-8b428576/"
                 target="_blank">
-                <i class="  hover 
+                <i class="  light-icons 
                             ff-light 
+                            hover-effect-o
                             fa 
                             fa-linkedin 
                             fa-2x">
@@ -490,8 +505,9 @@
             </a>
             <a  href="https://github.com/Jono-hare"
                 target="_blank">
-                <i  class=" hover 
+                <i  class=" light-icons 
                             ff-light 
+                            hover-effect-o
                             fa 
                             fa-github 
                             fa-2x" 
@@ -501,7 +517,8 @@
             <a  href="https://www.freecodecamp.org/jono-hare"
                 target="_blank"
             >
-                <i  class=" hover 
+                <i  class=" light-icons 
+                            hover-effect-o
                             ff-light 
                             fa 
                             fa-free-code-camp 
