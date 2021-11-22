@@ -179,4 +179,6 @@ footer {
   img {
     max-width: 400px;
   }
+
+  /* I wanted to incoporate different design layouts for different viewports. While I tried toggling div's on and off for different screen sizes I couldn't get this to work only using css. I was able to find solutions using javaScript so this is something I will look to add in the future. */
 }
