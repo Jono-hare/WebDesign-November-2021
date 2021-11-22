@@ -1,160 +1,182 @@
-* {
-  scroll-behavior: smooth;
-  /* margin: 0; */
+:root {
+  --clr-primary-100: #fcf7f8;
+  --clr-primary-300: #e0fbfc;
+  --clr-primary-500: #98c1d9;
+  --clr-primary-700: #3d5a80;
+  --clr-primary-900: #374458;
+  --clr-primary-max: #293241;
+  --clr-orange-100: #ee6c4d;
+
+  --ff-primary: "Playfair Display", serif;
+  --ff-accent: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: arial, helvetica, sans-serif;
-  font-size: 100%;
-  color: #3d5a80;
-  background-color: #fcf7f8;
+  font-family: var(--ff-primary);
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+/* Font styling */
+
+h1 {
+  color: var(--clr-primary-100);
+}
+
+.jumbotron-text {
+  color: var(--clr-primary-300);
+}
+
+.nav-item > .nav-link,
+.ff-dark > .btn {
+  color: var(--clr-primary-300);
+}
+
+.nav-item > .nav-link:hover,
+.ff-dark > .btn:hover {
+  color: var(--clr-orange-100);
+  text-decoration: none;
+}
+
+.ff-dark > .btn {
+  font-size: 1.8rem;
+  align-items: center;
+}
+
+.navbar-toggler > .navbar-toggler-icon {
+  color: var(--clr-primary-300);
+}
+
+.ff-dark,
+a {
+  color: var(--clr-primary-900);
+}
+
+.hover-link {
+  color: var(--clr-orange-100);
+}
+
+.hover-link:hover {
+  color: var(--clr-primary-500);
+  font-style: none;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+article > div,
+article > ul > li {
+  color: var(--clr-primary-700);
+}
+
+section > h2 {
+  color: var(--clr-primary-300);
+}
+
+/* Container Margins */
+
+.ul-padding {
+  margin: auto;
+}
+
+/* Image styling & Animation*/
+
+img {
+  max-width: 250px;
+  margin: auto;
+}
+
+img:hover {
+  transform: scale(1.025);
+  transition: 0.5s;
+}
+
+.hover-effect-o {
+  color: var(--clr-primary-300);
+}
+
+.hover-effect-o:hover {
+  color: var(--clr-orange-100);
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+/* Background styling */
+
+nav {
+  background-color: var(--clr-primary-max);
 }
 
 header {
-  text-align: center;
-  background-color: #293241;
-  color: #fcf7f8;
-  padding: 20px;
-  background-image: linear-gradient(to bottom, #374458, #293241);
-  background-image: url(https://www.capetown.travel/wp-content/uploads/2018/12/Table-Mountain-Camps-Bay.jpg);
+  background-image: url(../Images/hero.jpg);
   background-position: center;
   background-size: cover;
-  background-blend-mode: luminosity;
+  height: 100vh;
 }
 
-img {
-  border-radius: 50%;
-  box-shadow: 1px 1px 10px #ee6c4d;
-  width: 250px;
-  height: 250px;
-}
-
-h1 {
-  font-size: 2.5em;
-}
-
-header > div > p {
-  color: #e0fbfc;
-  font-size: 1.15em;
-}
-
-.header-small {
-  display: none;
-}
-
-.header-box {
-  max-width: 650px;
+.jumbotron-text-box {
+  max-width: 850px;
   margin: 15px auto;
   background: rgba(58, 68, 88, 0.6);
-  padding: 5px 5px;
+  padding: 15px 15px;
+  border-radius: 15px;
 }
 
-.box {
-  display: flex;
+.accordion > .card {
+  border-color: var(--clr-primary-900);
 }
 
-.menu {
-  background-color: #374458;
-  display: inline-block; /* No longer need after resume5 */
-  padding: 40px;
-}
-
-.menu > h2,
-footer > h2,
-a,
-.menu > ul {
-  color: #e0fbfc;
-  text-decoration: none;
-  list-style-type: none;
-  transition: 0.5s;
-}
-
-.menu > ul {
-  padding: 0; /* aligned the <li> elements with the <h2> */
-  font-size: 1.15em;
-}
-
-.menu > ul > li {
-  padding-bottom: 10px;
-}
-
-h2 {
-  font-size: 1.75em;
-}
-
-.h3-links {
-  color: #ee6c4d;
-  text-decoration: none;
-}
-
-.h3-links:hover {
-  color: #98c1d9;
-  transition: 0.5s;
-}
-
-a:hover {
-  color: #ee6c4d;
-}
-
-main {
-  margin: 20px;
-  padding: 20px;
-}
-
-.p-box {
-  padding-left: 35px;
+.card > .card-header {
+  background-color: var(--clr-primary-900);
+  border-color: var(--clr-primary-900);
 }
 
 footer {
-  background-image: linear-gradient(to bottom, #293241, #374458);
-  text-align: center;
-  padding: 15px;
+  background-color: var(--clr-primary-max);
 }
 
-footer > a {
-  padding: 0px 20px 0px 20px;
+/* Button Styling */
+
+.container > .jumbotron-btn,
+.text-center > .btn {
+  background-color: var(--clr-orange-100);
+  border-color: var(--clr-orange-100);
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 6vw;
-  }
-  header {
-    background-position: left;
-  }
-
-  .header-small {
-    display: block;
-  }
-
-  .header-small > p,
-  .p-box > p,
-  .p-box > p > a {
-    font-size: 3.25vw;
-  }
-
-  .header-med,
-  .menu {
-    display: none;
-  }
-
-  p,
-  p > a {
-    font-size: 2.5vw;
-  }
+.btn .container > .jumbotron-btn:hover,
+.text-center > .btn:hover {
+  background-color: var(--clr-primary-300);
+  border-color: var(--clr-primary-300);
+  color: var(--clr-orange-100);
+  transition: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    width: 10%;
-    /* padding: 20px; */
-  }
-
-  .box > .menu > ul > li > a {
-    font-size: 2.5vw;
-  }
+.light-icons {
+  color: var(--clr-primary-300);
+  transition: 0.5s;
+  margin: 10px 20px;
 }
 
-@media screen and (max-width: 992px) {
-  /* Do I need this? as Anything larger than 768px will defualt to the regular CSS? */
+.light-icons:hover {
+  color: var(--clr-orange-100);
+}
+
+/* Contact Form Styling */
+
+.form-floating {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 400px;
+  }
 }

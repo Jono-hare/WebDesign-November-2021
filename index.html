@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta   charset="UTF-8" />
+    <meta   http-equiv="X-UA-Compatible" 
+            content="IE=edge" />
+    <meta   name="viewport" 
+            content="width=device-width, initial-scale=1.0" />
+
+    <title>Jonathan Resume</title>
+
+    <!-- ============ Font Awesome ============ -->
+
+    <script
+            src="https://kit.fontawesome.com/c35844a889.js"
+            crossorigin="anonymous"
+    ></script>
+
+    
+    <!-- ============ CSS ===================== -->
+    
+    <link   rel="stylesheet" 
+            href="css/stylesheet.css" />
+    <!-- ============ Bootstrap CSS =========== -->
+    
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"/>
+    
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- ============= Google Fonts =========== -->
+
+    <link   rel="preconnect" 
+            href="https://fonts.googleapis.com"/>
+    <link   rel="preconnect" 
+            href="https://fonts.gstatic.com" 
+            crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400&display=swap"
+            rel="stylesheet"/>
+  </head>
+
+    <!-- ============= Body =================== -->
+
+  <body>
+    <!-- ============= Nav ==================== -->
+
+    <nav class="navbar
+                navbar-expand-md
+                fixed-top
+                px-3">
+
+        <a  class=" navbar-brand
+                    hover-effect-o
+                    font-weight-bold" 
+            href="#jumbotron">
+            Menu
+        </a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapsibleNavbar"
+                aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="   fas 
+                            fa-ellipsis-h
+                            hover-effect-o">
+            </span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse 
+                    navbar-collapse" 
+             id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a  class="nav-link" 
+                        href="#education">
+                        Education
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#experience">
+                        Experience
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#skills">
+                        Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#interests">
+                        Interests
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link"
+                        href="#contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+    <!-- ============= Nav End ================ -->
+
+    <!-- ============= Jumbotron ============== -->
+
+    <header id="jumbotron" 
+            class=" jumbotron 
+                    jumbotron-fluid 
+                    px-3 
+                    m-0">
+        <div  class="container">
+            <picture >
+                <source
+                media="(max-width: 768px)"
+                srcset="Images/jono-sass-small.jpg"/>
+                <source
+                media="(max-width: 922px)"
+                srcset="Images/jono-sass-med.jpg"/>
+                <img
+                class="   rounded-circle
+                            d-block
+                            mx-auto"
+                src="Images/jono-sass.jpg"
+                alt="A photo of Jonathan"/>
+            </picture>
+                <div class="jumbotron-text-box">
+                    <h1 class="display-4">
+                        Jonathan Wenning-Hare
+                    </h1>
+                    <p  class="jumbotron-text">
+                    Howsit, at the moment, I'm living in Cape Town and learning to code. I
+                    am currently looking to change career paths and looking forward to the
+                    new learning curve. Once complete, I'm looking to go overseas again.
+                    This is my first project submission for CodeSpace Academy.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a class="  btn 
+                                btn-primary 
+                                btn-lg
+                                mt-4
+                                jumbotron-btn
+                                text-center"
+                        href="#contact"
+                        role="button">
+                            Say Howsit
+                    </a>
+                </div>  
+            </p>
+        </div>
+    </header>
+
+    <!-- ============= Jumbotron End ========== -->
+
+    <!-- ============= Main =================== -->
+
+    <main class="px-auto">
+
+        <!-- Education Accordion -->
+        <div    class="accordion" 
+                id="educationAccordion">
+                <div class="card
+                        rounded-0">
+                <div  class=" card-header
+                            text-center" 
+                    id="education">
+                <h2 class="ff-dark">
+                    <button   class="   btn  
+                                        btn-link" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseEdu" 
+                                aria-expanded="true" 
+                                aria-controls="collapseEdu">
+                        Education
+                    </button>
+                </h2>
+              </div>
+          
+              <div  id="collapseEdu" 
+                    class=" collapse 
+                            show" 
+                    aria-labelledby="education" 
+                    data-parent="#educationAccordion">
+                <div class="card-body">
+                    <article class="px-5">
+                        <h3 class="ff-dark">
+                                Intro to Web at
+                            <a
+                                class="hover-link"
+                                href="https://www.codespace.co.za/"
+                                target="_blank">
+                                CodeSpace Academy
+                            </a>
+                        </h3>
+                        <div class="p-box">
+                            <p>
+                                During lockdown in 2020, I decided to start learning how to
+                                code. After speaking to a few friends in the industry, I began
+                                working on
+                                    <a
+                                        class="hover-link"
+                                        href="https://www.freecodecamp.org/certification/jono-hare/responsive-web-design"
+                                        target="_blank">
+                                        FreeCodeCamp's
+                                    </a>
+                                Responsive Web Design certification. Just like that, I caught
+                                the coding bug. A year later, I have decided to further my
+                                studies with CodeSpace and the Software Development Course
+                                that they offer.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="px-5">
+                        <h3 class="ff-dark">
+                            Bcom Marketing Management through Unisa
+                        </h3>
+                        <div class="p-box">
+                            <p>
+                                Fresh out of school, I spent my first two years studying
+                                full-time. While studying, I worked part-time as a delivery
+                                driver during the week and on weekends at Chelsea Cleaning,
+                                running the office. During my second year, I switched to
+                                studying part-time and working full-time. I was now in a more
+                                senior position. I was now able to put what I had learnt into
+                                practice.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+              </div>
+            </div>
+            <!-- Education Accordion End -->
+
+            <!-- Experience Accordion -->
+            <div class="accordion" 
+                 id="experienceAccordion">
+                <div class="card 
+                            rounded-0">
+                  <div  class=" card-header
+                                text-center" 
+                        id="experience">
+                    <h2 class="ff-dark">
+                      <button   class=" btn 
+                                        btn-link" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseExp" 
+                                aria-expanded="true" 
+                                aria-controls="collapseExp">
+                        Experience
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div  id="collapseExp" 
+                        class=" collapse" 
+                        aria-labelledby="experience" 
+                        data-parent="#experienceAccordion">
+                    <div class="card-body">
+                        <article class="px-5">
+                            <h3 class="ff-dark">
+                                Operations Manager at
+                                <a class="hover-link"
+                                    href="https://www.chelseacleaning.co.za">
+                                    Chelsea Cleaning
+                                </a>
+                            </h3>
+                            <ul>
+                                <li>
+                                    Managing the company's online presence and corresponding with
+                                    our digital marketing agency.
+                                </li>
+                                <li>
+                                    Making sure the day-to-day operations are running smoothly.
+                                </li>
+                                <li>
+                                    Performing internal quality audits.
+                                </li>
+                                <li>
+                                    Bookkeeping duties.
+                                </li>
+                                <li>Making monthly payments and salaries.</li>
+                                <li>Dealing with customer complaints.</li>
+                            </ul>
+                        </article>
+
+                        <article class="px-5">
+                            <h3 class="ff-dark">
+                                Senior Teacher at
+                                <a
+                                class="hover-link"
+                                href="https://www.apaxleaders.edu.vn/"
+                                target="_blank"
+                                >Apax Leaders</a
+                                >
+                            </h3>
+                            <ul>
+                                <li>
+                                A minimum of 18 hours of teaching a week. In person or online.
+                                </li>
+                                <li>
+                                Providing daily feedback on students as well as report cards
+                                at the end of the term
+                                </li>
+                                <li>
+                                Reviewing CCTV of teachers and providing feedback and
+                                coaching.
+                                </li>
+                                <li>Meeting with the HOD's weekly.</li>
+                                <li>Running workshops.</li>
+                                <li>Attending continuos training workshops.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience Accordion End -->
+
+            <!-- Skills Accordion -->
+            <div class="accordion" 
+                 id="skillAccordion">
+                <div class="card
+                            rounded-0">
+                    <div  class="   card-header
+                                    text-center" 
+                            id="skills">
+                        <h2 class="ff-dark">
+                        <button   class="   ff-dark 
+                                            btn 
+                                            btn-link" 
+                                    type="button" 
+                                    data-toggle="collapse"
+                                    data-target="#collapseSkill" 
+                                    aria-expanded="true" 
+                                    aria-controls="collapseSkill">
+                            Skills
+                        </button>
+                        </h2>
+                    </div>
+              
+                    <div  id="collapseSkill" 
+                        class=" collapse" 
+                        aria-labelledby="skills" 
+                        data-parent="#skillAccordion">
+                        <div class="card-body">
+                            <ul class=" px-5
+                                        ul-padding">
+                                <li>Team management</li>
+                                <li>Feedback & coaching</li>
+                                <li>Organizational development</li>
+                                <li>Operations management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills Accordion End -->
+
+            <!-- Interests Accordion -->
+            <div class="accordion" 
+                 id="interestsAccordion">
+                <div class="card 
+                            rounded-0">
+                    <div  class="   card-header
+                                    text-center" 
+                            id="interests">
+                        <h2 class="ff-dark">
+                        <button   class="   btn 
+                                            btn-link" 
+                                    type="button" 
+                                    data-toggle="collapse" 
+                                    data-target="#collapseInterests" 
+                                    aria-expanded="true" 
+                                    aria-controls="collapseInterests">
+                            Interests
+                        </button>
+                        </h2>
+                    </div>
+              
+                    <div  id="collapseInterests" 
+                        class=" collapse" 
+                        aria-labelledby="interests" 
+                        data-parent="#interestsAccordion">
+                        <div class="card-body">
+                            <ul class="px-5">
+                            <li>Trail running</li>
+                            <li>Surfing</li>
+                            <li>Free diving</li>
+                            <li>Motorcycle rides</li>
+                            <li>Gaming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interests Accordion End -->
+
+        </div>
+
+            <!-- Accordion End -->
+
+    <!-- ============= Contact form =========== -->
+
+    <form   class=" container 
+                    p-3"
+            id="contact">
+
+            <h2 class=" text-center
+                        mb-3">
+                Contact Me
+            </h2>
+        
+        <!-- Floating Name -->
+            <div class="    form-floating
+                            mb-3">
+                <input  class="form-control"
+                        type="text"
+                        placeholder="Your Name"
+                        id="form-name"
+                        required>
+                <label for="form-name">Your Name</label>
+            </div>
+
+        <!-- Floating Email -->
+        
+            <div class="    form-floating
+                            mb-3">
+                <input  class="form-control"
+                        type="email"
+                        placeholder="Your Email"
+                        id="form-email"
+                        required>
+                <label for="form-email">Your Email</label>
+            </div>
+
+        <!-- Floating Textarea -->
+            <div class="form-floating">
+                <textarea   class=" form-control
+                                    rounded
+                                    my-3"
+                            type="text"
+                            placeholder="Your Message"
+                            id="form-textarea"
+                            required></textarea>
+                    <label for="form-textarea">
+                        Your Message
+                    </label>
+            </div>
+
+        <!-- Submit btn -->
+            <div class="text-center">
+                <button type="submit"
+                        value="submit" 
+                        class=" btn 
+                                btn-primary 
+                                btn-xl
+                                m-3">
+                                Send it
+                </button>
+            </div>
+    </form>
+
+    <!-- ============= Contact form end ======= -->
+
+    </main>
+
+    <!-- ============= Main End =============== -->
+
+    <!-- ============= footer ================= -->
+
+    <footer class=" container-fluid 
+                    bg-darker
+                    p-3">
+        <section class="container 
+                        text-center">
+            <h2 class="ff-light">
+                Connect with me
+            </h2>
+            <a  href="https://www.linkedin.com/in/jonathan-wenning-hare-8b428576/"
+                target="_blank">
+                <i class="  light-icons 
+                            ff-light 
+                            hover-effect-o
+                            fa 
+                            fa-linkedin 
+                            fa-2x">
+                </i>
+            </a>
+            <a  href="https://github.com/Jono-hare"
+                target="_blank">
+                <i  class=" light-icons 
+                            ff-light 
+                            hover-effect-o
+                            fa 
+                            fa-github 
+                            fa-2x" 
+                    aria-hidden="true">
+                </i>
+            </a>
+            <a  href="https://www.freecodecamp.org/jono-hare"
+                target="_blank"
+            >
+                <i  class=" light-icons 
+                            hover-effect-o
+                            ff-light 
+                            fa 
+                            fa-free-code-camp 
+                            fa-2x"
+                    aria-hidden="true">
+                </i>
+            </a>
+        </section>
+          
+    </footer>
+
+    <!-- ============= Footer End ============= -->
+  </body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  scroll-behavior: smooth;
+  /* margin: 0; */
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 100%;
+  color: #3d5a80;
+  background-color: #fcf7f8;
+}
+
+header {
+  text-align: center;
+  background-color: #293241;
+  color: #fcf7f8;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #374458, #293241);
+  background-image: url(https://www.capetown.travel/wp-content/uploads/2018/12/Table-Mountain-Camps-Bay.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #ee6c4d;
+  width: 250px;
+  height: 250px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+header > div > p {
+  color: #e0fbfc;
+  font-size: 1.15em;
+}
+
+.header-small {
+  display: none;
+}
+
+.header-box {
+  max-width: 650px;
+  margin: 15px auto;
+  background: rgba(58, 68, 88, 0.6);
+  padding: 5px 5px;
+}
+
+.box {
+  display: flex;
+}
+
+.menu {
+  background-color: #374458;
+  display: inline-block; /* No longer need after resume5 */
+  padding: 40px;
+}
+
+.menu > h2,
+footer > h2,
+a,
+.menu > ul {
+  color: #e0fbfc;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.5s;
+}
+
+.menu > ul {
+  padding: 0; /* aligned the <li> elements with the <h2> */
+  font-size: 1.15em;
+}
+
+.menu > ul > li {
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+.h3-links {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+
+.h3-links:hover {
+  color: #98c1d9;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #ee6c4d;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+}
+
+.p-box {
+  padding-left: 35px;
+}
+
+footer {
+  background-image: linear-gradient(to bottom, #293241, #374458);
+  text-align: center;
+  padding: 15px;
+}
+
+footer > a {
+  padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 6vw;
+  }
+  header {
+    background-position: left;
+  }
+
+  .header-small {
+    display: block;
+  }
+
+  .header-small > p,
+  .p-box > p,
+  .p-box > p > a {
+    font-size: 3.25vw;
+  }
+
+  .header-med,
+  .menu {
+    display: none;
+  }
+
+  p,
+  p > a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 10%;
+    /* padding: 20px; */
+  }
+
+  .box > .menu > ul > li > a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Do I need this? as Anything larger than 768px will defualt to the regular CSS? */
+}
